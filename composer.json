@@ -1,0 +1,27 @@
+{
+    "name": "locomotif/media",
+    "description": "Media module for locomotif CMS",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Alex Popa",
+            "email": "p.alexandruadrian@yahoo.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {},
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Locomotif\\Media\\MediaServiceProvider"
+            ]
+        }
+    },
+    "autoload": {
+       "psr-4": {
+           "Locomotif\\Media\\": "src/"
+        }
+    }
+}
