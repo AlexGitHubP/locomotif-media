@@ -27,7 +27,7 @@ class Media extends Model
                 ->get();
                 
         $media->map(function($mediaElement){
-            $mediaElement->file = (!empty($mediaElement->file) || $mediaElement->file!=null) ? $mediaElement->folder.'/'.$mediaElement->file : asset('img/noimg.png');
+            $mediaElement->file = (!empty($mediaElement->file) || $mediaElement->file!=null) ? '/'.$mediaElement->folder.'/'.$mediaElement->file : asset('img/noimg.png');
         });
         
         return $media;
@@ -38,7 +38,7 @@ class Media extends Model
                     ->get();
         
         $media->map(function($mediaElement){
-            $mediaElement->file = (!empty($mediaElement->file) || $mediaElement->file!=null) ? $mediaElement->folder.'/'.$mediaElement->file : asset('img/noimg.png');
+            $mediaElement->file = (!empty($mediaElement->file) || $mediaElement->file!=null) ? '/'.$mediaElement->folder.'/'.$mediaElement->file : asset('img/noimg.png');
         });
 
         return $media;
